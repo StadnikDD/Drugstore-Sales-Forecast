@@ -111,7 +111,7 @@ That is, during next 6 weeks, the predictive model has an mean error of +/-$634 
 
 Below is showed a daily comparison of average sales and average forecasts across the entire store chain:
 
-IMAGES
+![](img/sales_vs_prediction_per_day.png)
 
 Thus, assuming that company's forecast **so far were manual** with a mean error close to 30%, we have a gain of 20,8 percentile point. It means, if with forecast before ways we have needed an investment allocation of $10 millions, now we will need to allocate $8 millions investment.
 
