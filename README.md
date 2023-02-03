@@ -2,15 +2,6 @@
 
 Sales forecsatin of type prediction project with a real drugstore stores sales problem with an [open data source ](https://www.kaggle.com/competitions/rossmann-store-sales/overview/description)
 
-# **Table of content**
-### [1. Business question](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#1-business-question) <br />
-### [2. Business assumptions](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#2-business-assumptions) <br />
-### [3. Planning solution](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#3-planning-solution) <br />
-### [4. Mains insights](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#4-mains-insights) <br />
-### [5. Results - model and financial](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#5-financial-results-for-the-business) <br />
-### [6. Learnings and conclusion](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#6-learnings-and-conclusion) <br />
-### [7. Next steps](https://github.com/StadnikDD/Drugstore-Sales-Forecast/edit/main/README.md#7-next-steps) <br />
-
 
 ## **1. Business question**
 
@@ -22,7 +13,7 @@ Rossmann operates 4088 drug stores in 7 European countries until 2019. Currently
 - **Motivation:** The sales forecast was requested by CFO in a monthly business results meeting;
 - **Root cause:** Difficult to set the investment value to remodel each store;
 - **Problem owner:** Rossmann drugstore Financial VP (CFO);
-- **Format of the solution:**
+- **Format of the solution:** <br />
     Granularity: Sales forecasting per day at each store to next 42 days (6 weeks) <br />
     Problem type: Sales Forescasting <br />
     Potential methods: Time series <br />
@@ -36,23 +27,22 @@ Rossmann operates 4088 drug stores in 7 European countries until 2019. Currently
 - Index registered False on Open days weren't considered (closed days);
 - Assuming zero or null sales values as closed stores, then these index won't be considered;
 - Column **‘Customers’** weren't used because the target variable/dependent variable is sales;
-- Data dictionary: <br />
-&emsp;    **Id:** an Id that represents a (Store, Date) duple within the test set; <br />
-&emsp;    **Store:** a unique Id for each store; <br />
-&emsp;    **Sales:** the turnover for any given day (this is what you are predicting); <br />
-&emsp;    **Customers:** the number of customers on a given day; <br />
-&emsp;    **Open:** an indicator for whether the store was open: 0 = closed, 1 = open; <br />
-&emsp;    **StateHoliday:** indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None; <br />
-&emsp;    **SchoolHoliday:** indicates if the (Store, Date) was affected by the closure of public schools; <br />
-&emsp;    **StoreType:** differentiates between 4 different store models: a, b, c, d; <br />
-&emsp;    **Assortment:** describes an assortment level: a = basic, b = extra, c = extended; <br />
-&emsp;    **CompetitionDistance:** distance in meters to the nearest competitor store; <br />
-&emsp;    **CompetitionOpenSince[Month/Year]:** gives the approximate year and month of the time the nearest competitor was opened; <br />
-&emsp;    **Promo:** indicates whether a store is running a promo on that day; <br />
-&emsp;    **Promo2:** Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating; <br />
-&emsp;    **Promo2Since[Year/Week]:** describes the year and calendar week when the store started participating in Promo2; <br />
-&emsp;    **PromoInterval:** describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g.
-"Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store.
+- Data dictionary: <br /> <br />
+&emsp;    **Id:** an Id that represents a (Store, Date) duple within the test set; <br /> <br />
+&emsp;    **Store:** a unique Id for each store; <br /> <br />
+&emsp;    **Sales:** the turnover for any given day (this is what you are predicting); <br /> <br />
+&emsp;    **Customers:** the number of customers on a given day; <br /> <br />
+&emsp;    **Open:** an indicator for whether the store was open: 0 = closed, 1 = open; <br /> <br />
+&emsp;    **StateHoliday:** indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None; <br /> <br />
+&emsp;    **SchoolHoliday:** indicates if the (Store, Date) was affected by the closure of public schools; <br /> <br />
+&emsp;    **StoreType:** differentiates between 4 different store models: a, b, c, d; <br /> <br />
+&emsp;    **Assortment:** describes an assortment level: a = basic, b = extra, c = extended; <br /> <br />
+&emsp;    **CompetitionDistance:** distance in meters to the nearest competitor store; <br /> <br />
+&emsp;    **CompetitionOpenSince[Month/Year]:** gives the approximate year and month of the time the nearest competitor was opened; <br /> <br />
+&emsp;    **Promo:** indicates whether a store is running a promo on that day; <br /> <br />
+&emsp;    **Promo2:** Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating; <br /> <br />
+&emsp;    **Promo2Since[Year/Week]:** describes the year and calendar week when the store started participating in Promo2; <br /> <br />
+&emsp;    **PromoInterval:** describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store.
 
 ## **3. Planning solution**
 
@@ -65,7 +55,7 @@ Rossmann operates 4088 drug stores in 7 European countries until 2019. Currently
 2. **Tools:**
     1. Python;
     2. Jupyter Notebook;
-    3. VSCode**;
+    3. VSCode;
     4. Render cloud application.
 3. **Process:**
     1. Raise business pains and needs together hypothesis to be validated
@@ -91,15 +81,30 @@ Rossmann operates 4088 drug stores in 7 European countries until 2019. Currently
 ## **4. Mains insights**
 
 - **Hypothesis 1. Stores with more stock should selll more <br />
+
+![](img/hypothesis1.png)
+
 FALSE** - BIGGEST ASSORTMENT stores sell LESS
 - **Hypothesis  2. Near competition makes less sales <br />
-FALSE** - In fact, stores with COMPETITORS NEARBY sell MORE <br />
+
+![](img/hypothesis2.png)
+
+FALSE** - In fact, stores with CLOSE COMPETITORS sell MORE <br />
 - **Hypothesis  3. Stores with older competitors should sell more. <br />
+
+![](img/hypothesis3.png)
+
 FALSE** - Stores with OLDER COMPETITORS sell LESS. <br />
 - **Hypothesis 4. Long time promotions should sell more <br />
-FALSE** - The store regularly sell up to a certain period <br />
-- **Hypothesis  6. Consecutive promotions should sell more <br />
-FALSE** - In fact, consecutive promotions sells less. <br />
+
+![](img/hypothesis4.png)
+
+FALSE** - The stores regularly sell up to a certain period, then it starts to decrease. <br />
+- **Hypothesis  8. Stores should sell more passing the years <br />
+
+![](img/hypothesis8.png)
+
+FALSE** - Sales have been decresing over the years <br />
 
 
 
