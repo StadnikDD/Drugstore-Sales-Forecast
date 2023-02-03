@@ -80,31 +80,31 @@ Rossmann operates 4088 drug stores in 7 European countries until 2019. Currently
     
 ## **4. Mains insights**
 
-- **Hypothesis 1. Stores with more stock should selll more <br />
+- **Hypothesis 1. Stores with more stock should selll more** <br />
 
 ![](img/hypothesis1.png)
 
-FALSE** - BIGGEST ASSORTMENT stores sell LESS
-- **Hypothesis  2. Near competition makes less sales <br />
+**FALSE** - BIGGEST ASSORTMENT stores sell LESS
+- **Hypothesis  2. Near competition makes less sales** <br />
 
 ![](img/hypothesis2.png)
 
-FALSE** - In fact, stores with CLOSE COMPETITORS sell MORE <br />
-- **Hypothesis  3. Stores with older competitors should sell more. <br />
+**FALSE** - In fact, stores with CLOSE COMPETITORS sell MORE <br />
+- **Hypothesis  3. Stores with older competitors should sell more** <br />
 
 ![](img/hypothesis3.png)
 
-FALSE** - Stores with OLDER COMPETITORS sell LESS. <br />
-- **Hypothesis 4. Long time promotions should sell more <br />
+**FALSE** - Stores with OLDER COMPETITORS sell LESS. <br />
+- **Hypothesis 4. Long time promotions should sell more** <br />
 
 ![](img/hypothesis4.png)
 
-FALSE** - The stores regularly sell up to a certain period, then it starts to decrease. <br />
-- **Hypothesis  8. Stores should sell more passing the years <br />
+**FALSE** - The stores regularly sell up to a certain period, then it starts to decrease. <br />
+- **Hypothesis  8. Stores should sell more passing the years** <br />
 
 ![](img/hypothesis8.png)
 
-FALSE** - Sales have been decresing over the years <br />
+**FALSE** - Sales have been decresing over the years <br />
 
 
 
